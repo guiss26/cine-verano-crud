@@ -1,0 +1,22 @@
+{
+    "movies": [
+        {
+            "id": "1",
+            "title": "Cantando bajo la lluvia",
+            "director": "Gene Kelly, Stanley Donen",
+            "description": "El ídolo del cine Don Lockwood pensaba que lo tenía todo en la vida: fama, fortuna y éxito hasta que conoce a la aspirante a actriz Kathy Selden. La joven y la llegada del cine sonoro revolucionarán la vida de Don."
+        },
+        {
+            "id": "2",
+            "title": "El gran showman",
+            "director": "Michael Gracey",
+            "description": "En el siglo XIX, P.T. Barnum es un visionario que surge de la nada y crea un fascinante espectáculo que se convertirá en una sensación mundial, el llamado Ringling Bros. and Barnum & Bailey Circus."
+        },
+        {
+            "id": "3",
+            "title": "Hairspray",
+            "director": "Adam Shankman",
+            "description": "En el Baltimore de los años sesenta, una adolescente se convierte en una celebridad nocturna después de ganar un puesto en un programa de baile local llamado The Corny Collins Show"
+        }
+    ]
+}
