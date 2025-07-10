@@ -20,49 +20,66 @@
 </head>
 
 <body>
-    <main>
+    <main class="container">
         <header>
             <h1>🎥 Cine de Verano</h1>
         </header>
         <section>
             <div class="actions">
-                <input type="text" placeholder="Escriba aquí"><!--Solo para ver(POST) películas-->
-                <button class="btn-get">Ver películas</button>
-                <button class="btn-post">Agregar película</button>
-            </div>
-            <div class="cartelera">
                 <h2>🎬 CARTELERA</h2>
+                <div class="buttons-get-post">
+                    <a class="btn btn-get" onclick="printMovies()">Ver películas</a>
+                    <a href="" class="btn btn-post">Agregar película</a>
+                </div>
+                <!-- <button class="btn btn-get" onclick="printMovies()">Ver películas</button>
+                <button class="btn btn-post">Agregar película</button> -->
+            </div>
+            <!-- <h2>🎬 CARTELERA</h2> -->
+
+            <div class="cartelera">
+                <!-- <h2>🎬 CARTELERA</h2> -->
                 <div class="cards">
-                    <div>
-                        <img src="" alt="img-peli">
-                        <p class="title"></p>
+                    <div class="card-movie">
+                        <h3 class="title-movie">El viaje de Chihiro</h3>
+                        <p class="director-movie"><span>Director:</span> Hayao Miyazaki</p>
+                        <p class="description-movie"><span>Descripción:</span> Chihiro es una niña de diez años caprichosa y testaruda que cree que el universo entero debe someterse a sus deseos.</p>
+                        <div class="btn-delete-update">
+                            <a class="btns btn-delete">Borrar</a>
+                            <a href="pages/update.html" class="btns btn-update">Editar</a>
+                        </div>
                     </div>
-                    <div>
-                        <img src="" alt="img-peli">
-                        <p class="title"></p>
+                    <div class="card-movie">
+                        <!-- <img src="public/img1.jfif" alt="img-peli"> -->
+                        <h3 class="title-movie">El viaje de Chihiro</h3>
+                        <p class="director-movie"><span>Director:</span> Hayao Miyazaki</p>
+                        <p class="description-movie"></p><span>Descripción:</span> Chihiro es una niña de diez años caprichosa y testaruda que cree que el universo entero debe someterse a sus deseos.</p>
+                        <div class="btn-delete-update">
+                            <a class="btns btn-delete">Borrar</a>
+                            <a href="pages/update.html" class="btns btn-update">Editar</a>
+                        </div>
                     </div>
-                    <div>
-                        <img src="" alt="img-peli">
-                        <p class="title"></p>
+                    <!-- <div class="card-movie">
+                        <img src="public/img1.jfif" alt="img-peli">
+                        <p class="title">Título</p>
                     </div>
-                    <div>
-                        <img src="" alt="img-peli">
-                        <p class="title"></p>
+                    <div class="card-movie">
+                        <img src="public/img1.jfif" alt="img-peli">
+                        <p class="title">Título</p>
                     </div>
-                    <div>
-                        <img src="" alt="img-peli">
-                        <p class="title"></p>
+                    <div class="card-movie">
+                        <img src="public/img1.jfif" alt="img-peli">
+                        <p class="title">Título</p>
                     </div>
-                    <div>
-                        <img src="" alt="img-peli">
-                        <p class="title"></p>
-                    </div>
+                    <div class="card-movie">
+                        <img src="public/img1.jfif" alt="img-peli">
+                        <p class="title">Título</p>
+                    </div>  -->
                 </div>
             </div>
         </section>
         <footer>
-            <p>Proyecto creado por grupo P4 Femcoders Factoria F5</p>
-            <p>© 2025 Tabla Periódica Interactiva</p>
+            <p>Proyecto creado por Guissella Pérez, grupo P4 Femcoders Factoria F5</p>
+            <p>© 2025 Cine de Verano</p>
             <img class="logo-fem-coders" src="public/fem-coders-logo.png" alt="logo fem-coders-f5">
         </footer>
     </main>

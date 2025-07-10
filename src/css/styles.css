@@ -20,9 +20,253 @@
   font-weight: <weight>;
   font-style: normal;
 } */
+:root {
+    --fondo-general: #FAF3DD;
+    --fondo-header-footer: #7B2E2E;
+    --boton-principal: #D95D39;
+    --tarjeta-fondo: #F5E1C0;
+    --texto-oscuro: #2D2D2D;
+    --borde-decorativo: #C9A66B;
+    --btn-agregar-editar: #3E9C34;
+    --btn-delete: #BD1919;
+}
 
 * {
-    /* padding: 0;
-    margin: 0; */
+    padding: 0;
+    margin: 0;
     font-family: "DM Sans", sans-serif;
+    box-sizing: border-box;
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/*HEADER*/
+header {
+    background-color: var(--fondo-header-footer);
+    color: white;
+    padding: 25px 35px 25px 0;
+    text-align: end;
+    /*probar izq*/
+    font-size: 22px;
+}
+
+/*SECTION*/
+section {
+    flex: 1;
+    background-color: var(--fondo-general);
+}
+
+/*//-- DIV.ACTIONS input y botones --//*/
+.actions { /*Falta hacerlo responsive <<<<<<<<<<<<<<<<<<<<*/
+    background-color: #E0D9C3;
+    padding: 20px 40px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons-get-post {
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+/* input {
+    width: 56%;
+    margin-right: 17px;
+} */
+
+.btn {
+    /* width: 19%; */
+    border-radius: 7px;
+    border: none;
+    padding: 17px;
+
+    height: 70px;
+    width: 100%;
+    margin-right: 5px;
+    color: white;
+    
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-get {
+    background-color: var(--boton-principal);
+}
+
+.btn-post {
+    background-color: var(--btn-agregar-editar);
+}
+
+.btn-get:hover {
+    background-color: #b75337;
+}
+
+.btn-post:hover {
+    background-color: #34772c;
+}
+
+/*//-- DIV.CARTELERA h2 y cards --//*/
+.cartelera {
+    padding: 50px;
+    /* padding-bottom: 30px; */
+    /* background-color: #3E9C34; */
+    color: var(--texto-oscuro);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: 400;
+    /* text-align: right; */
+    padding: 10px 50px;
+}
+
+/* -- CARDS --*/
+.cards {
+    /* background-color: red; */
+    /* width: 760px; */
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+
+.card-movie {
+    background-color: var(--tarjeta-fondo);
+    /* padding: 17px; */
+    padding: 25px;
+    margin-bottom: 60px;
+    border-radius: 10px;
+
+    width: 350px;
+}
+
+.card-movie img {
+    width: 300px;
+    height: 250px;
+}
+
+.title-movie {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+.director-movie {
+    margin-bottom: 5px;
+}
+
+span {
+    font-weight: 900;
+}
+
+/*botones delete-update*/
+.btn-delete-update {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+.btns {
+    border: none;
+    padding: 10px;
+    width: 50%;
+    border-radius: 10px;
+
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+
+.btn-update {
+    background-color: var(--btn-agregar-editar);
+}
+
+.btn-delete {
+    background-color: var(--btn-delete);
+}
+
+.btn-update:hover {
+    background-color: #34772c;
+}
+
+.btn-delete:hover {
+    background-color: #861515;
+}
+
+/*FOOTER*/
+footer {
+    background-color: var(--fondo-header-footer);
+    text-align: center;
+    color: white;
+}
+
+footer p:first-child {
+    margin-top: 35px;
+}
+
+footer p {
+    margin-top: 10px;
+}
+
+.logo-fem-coders {
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 1242px) {
+
+    /*//-- DIV.ACTIONS --//*/
+    input {
+        width: 55%;
+    }
+
+    @media only screen and (max-width: 1073px) {
+        input {
+            width: 50%;
+        }
+    }
+
+    @media only screen and (max-width: 800px) {/*corregir margen entre pelis*/
+        .cards {
+            margin: 0 50px;/*VAS POR AQUI!!!!!!!!*/
+        }
+    }
+    @media only screen and (max-width: 781px) {
+        .btn {
+            font-size: 12px;
+        }
+
+        .cards {
+            width: auto;
+            flex-wrap: wrap;
+        }
+    }
+
+    @media only screen and (max-width: 731px){/*ver si corregir ancho botones*/
+        input {
+            width: 100%;
+        }
+        .btn {
+            width: 100%;
+            margin-top: 10px;
+        }
+    }
+
+}
+
+/*VER CÓMO HACER EL ANCHO DE LOS ELEMENTOS DEL DIV.ACTIONS CON FR*/
