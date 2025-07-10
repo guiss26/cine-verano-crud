@@ -10,11 +10,10 @@
     width: 600px;
 }
 
-.card-movie-back img{
-    /* width: 300px; */
+/* .card-movie-back img{
     width: 100%;
     height: 250px;
-}
+} */
 
 .card-form {
     width: 450px;
@@ -40,5 +39,3 @@ textarea {
 .btn-delete-update {
     justify-content: center;
 }
-
-/*CONTINUAR CON EL CARD DE LA IMG CON TODA LA INFO Y BOTONES*/

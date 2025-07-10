@@ -1,7 +1,5 @@
 .card {
     margin: 80px 0;
-    /* height: 00px;
-    width: 600px; */
 }
 
 .card-movie-back{
@@ -10,11 +8,10 @@
     width: 600px;
 }
 
-.card-movie-back img{
-    /* width: 300px; */
+/* .card-movie-back img{
     width: 100%;
     height: 250px;
-}
+} */
 
 .card-form {
     width: 450px;
