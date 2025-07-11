@@ -73,6 +73,8 @@ async function printMovies() {
     // console.log("Películas cargadas: ", listMovies)
     divCards.innerHTML = "" //limpiar antes de imprimir
 
+    //prueba
+    document.querySelector(".welcome").style.display = "block"
     const printMovieList = listMovies.map(movie => {
         return divCards.innerHTML += `<div class="card-movie">
             <h3 class="title-movie">${movie.title}</h3>
@@ -84,21 +86,24 @@ async function printMovies() {
             </div>
             </div>`
     }).join("")
+
+    //prueba
+    document.querySelector(".welcome").style.display = "none"
     return printMovieList
 }
 
 //UPDATE - PUT
 const formularioUpdate = document.getElementById("formulario-update")
 //recuperar el ID guardado desde localstorage
-function setMovieToEdit(id){
+function setMovieToEdit(id) {
     localStorage.setItem("movieId", id)
 }
 
 //cargar valores al formulario
-async function loadMovieData(id){//no funciona
+async function loadMovieData(id) {//no funciona
     try {
         const response = await fetch(`${URL_MOVIES}/${id}`)
-        if(!response.ok) throw new Error("Película no encontrada")
+        if (!response.ok) throw new Error("Película no encontrada")
 
         const movie = await response.json()
 
@@ -119,7 +124,7 @@ async function updateMovie(id) {
     }
 
     //Crea un objeto con los datos escritos en el formulario (Obtener los valores ingresados)
-    
+
     console.log(newMovie)
     // debugger;
 
@@ -138,7 +143,7 @@ async function updateMovie(id) {
             localStorage.removeItem("movieId")
             window.location.href = "../index.html"
             // formulario.reset() //limpiar formulario
-        }else{
+        } else {
             alert("Error al actualizar la película")
         }
 
@@ -149,18 +154,18 @@ async function updateMovie(id) {
 }
 
 if (formularioUpdate) {
-  formularioUpdate.addEventListener("submit", async function (e) {
-    e.preventDefault();
+    formularioUpdate.addEventListener("submit", async function (e) {
+        e.preventDefault();
+        const movieId = localStorage.getItem("movieId");
+        if (movieId) {
+            updateMovie(movieId);
+        }
+    });
+
     const movieId = localStorage.getItem("movieId");
     if (movieId) {
-      updateMovie(movieId);
+        loadMovieData(movieId);
     }
-  });
-
-  const movieId = localStorage.getItem("movieId");
-  if (movieId) {
-    loadMovieData(movieId);
-  }
 }
 //Al enviar el formulario
 
