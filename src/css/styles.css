@@ -50,7 +50,6 @@ header {
     color: white;
     padding: 25px 35px 25px 0;
     text-align: end;
-    /*probar izq*/
     font-size: 22px;
 }
 
@@ -61,7 +60,7 @@ section {
 }
 
 /*//-- DIV.ACTIONS input y botones --//*/
-.actions { /*Falta hacerlo responsive <<<<<<<<<<<<<<<<<<<<*/
+.actions { 
     background-color: #E0D9C3;
     padding: 20px 40px;
 
@@ -71,20 +70,13 @@ section {
 }
 
 .buttons-get-post {
-    /* background-color: red; */
     display: flex;
     justify-content: center;
     align-items: center;
     width: 40%;
 }
 
-/* input {
-    width: 56%;
-    margin-right: 17px;
-} */
-
 .btn {
-    /* width: 19%; */
     border-radius: 7px;
     border: none;
     padding: 17px;
@@ -120,8 +112,6 @@ section {
 /*//-- DIV.CARTELERA h2 y cards --//*/
 .cartelera {
     padding: 50px;
-    /* padding-bottom: 30px; */
-    /* background-color: #3E9C34; */
     color: var(--texto-oscuro);
 
     display: flex;
@@ -133,7 +123,6 @@ section {
 h2 {
     font-size: 50px;
     font-weight: 400;
-    /* text-align: right; */
     padding: 10px 50px;
 }
 
@@ -149,8 +138,6 @@ h2 {
 }
 /* -- CARDS --*/
 .cards {
-    /* background-color: red; */
-    /* width: 760px; */
     width: 800px;
     display: flex;
     justify-content: center;
@@ -161,7 +148,6 @@ h2 {
 
 .card-movie {
     background-color: var(--tarjeta-fondo);
-    /* padding: 17px; */
     padding: 25px;
     margin-bottom: 60px;
     border-radius: 10px;
@@ -269,7 +255,7 @@ footer p {
                 text-align: center;
             }
 
-            @media only screen and (max-width: 800px) {/*corregir margen entre pelis*/
+            @media only screen and (max-width: 800px) {
                 header {
                     font-size: 18px;
                 }
@@ -283,7 +269,7 @@ footer p {
                 }
 
                 .cards {
-                    margin: 0 50px;/*VAS POR AQUI!!!!!!!!*/
+                    margin: 0 50px;
                 }
 
             
@@ -296,7 +282,7 @@ footer p {
                         width: auto;
                         flex-wrap: wrap;
                     }
-                    @media only screen and (max-width: 731px){/*ver si corregir ancho botones*/
+                    @media only screen and (max-width: 731px){
                         input {
                             width: 100%;
                         }
