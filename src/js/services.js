@@ -153,7 +153,7 @@ async function updateMovie(id) {
     }
 }
 
-if (formularioUpdate) {
+if (formularioUpdate) {//Si existe
     formularioUpdate.addEventListener("submit", async function (e) {
         e.preventDefault();
         const movieId = localStorage.getItem("movieId");
