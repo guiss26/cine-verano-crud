@@ -1,12 +1,16 @@
-.card {
-    margin: 80px 0;
+.cards {
+    /* margin: 80px 0; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.card-movie-back{
+/* .card-movie-back{
     background-color: #F5E1C0;
     height: 500px;
     width: 600px;
-}
+} */
 
 /* .card-movie-back img{
     width: 100%;
@@ -14,7 +18,8 @@
 } */
 
 .card-form {
-    width: 450px;
+    width: 450px; 
+    /*  */
 }
 
 label {
@@ -34,7 +39,17 @@ textarea {
     font-size: 13px;
 }
 
+/* .div-btn-post {
+    justify-content: center;
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+} */
+
 .btn-delete-update {
     justify-content: center;
 }
 
+.btn-update {
+    font-size: 17px;
+}

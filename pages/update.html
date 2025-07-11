@@ -16,8 +16,8 @@
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet"><!--dm-sans-->
 
-    <link rel="stylesheet" href="/src/css/styles.css">
-    <link rel="stylesheet" href="/src/css/update.css">
+    <link rel="stylesheet" href="../src/css/styles.css">
+    <link rel="stylesheet" href="../src/css/update.css">
 </head>
 
 <body>
@@ -30,22 +30,12 @@
                 <h2>🎬 CARTELERA</h2>
                 <div class="buttons-get-post">
                     <a href="../index.html" class="btn btn-get" onclick="printMovies()">Ver películas</a>
-                    <a href="pages/post.html" class="btn btn-post">Agregar película</a>
+                    <a href="./post.html" class="btn btn-post">Agregar película</a><!--me da error-->
                 </div>
             </div>
             <div class="cartelera">
-                <div class="card">
-                    <!-- <div class="card-movie-back">
-                        <img src="../public/img1.jfif" alt="img-peli">
-                        <p class="title">Título</p>
-                        <p class="director">Director:</p>
-                        <p class="description">Descripción</p>
-                        <div class="btn-put-delete">
-                            <button>Borrar</button>
-                            <button>Editar</button>
-                        </div>
-                    </div> -->
-                    <form action="" method="put" class="card-movie card-form">
+                <div class="cards">
+                    <form action="" method="put" id="formulario-update" class="card-movie card-form">
                         <label for="title">Título</label>
                         <input type="text" id="title" name="title" class="ipt input-title">
 
@@ -56,7 +46,7 @@
                         <textarea type="text" id="description" name="description" class="ipt input-description"></textarea>
 
                         <div class="btn-delete-update">
-                            <a href="pages/update.html" class="btns btn-update">Agregar</a>
+                            <button type="submit" class="btns btn-update">Editar</button>
                         </div>
                     </form>
 
@@ -64,11 +54,11 @@
             </div>
         </section>
         <footer>
-            <p>Proyecto creado por Guissella Pérez, grupo P4 Femcoders Factoria F5</p>
+            <p>Proyecto creado por Guissella Pérez y Priscelis Codrington, grupo P4 Femcoders Factoria F5</p>
             <p>© 2025 Cine de Verano</p>
             <img class="logo-fem-coders" src="../public/fem-coders-logo.png" alt="logo fem-coders-f5">
         </footer>
     </main>
-    <script src="src/js/services.js"></script>
+    <script src="../src/js/services.js"></script>
 </body>
 </html>

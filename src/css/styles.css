@@ -67,6 +67,7 @@ section {
 
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .buttons-get-post {
@@ -101,6 +102,7 @@ section {
 
 .btn-get {
     background-color: var(--boton-principal);
+    font-size: 17px;
 }
 
 .btn-post {
@@ -135,13 +137,24 @@ h2 {
     padding: 10px 50px;
 }
 
+.welcome {
+    width: 100%;
+    text-align: center;
+}
+
+.span-btn {
+    font-weight: 900;
+    color: black;
+    font-size: 21px;
+}
 /* -- CARDS --*/
 .cards {
     /* background-color: red; */
     /* width: 760px; */
     width: 800px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 10px 60px;
     flex-wrap: wrap;
     padding: 50px 0;
 }
@@ -176,7 +189,7 @@ span {
 }
 
 /*botones delete-update*/
-.btn-delete-update {
+.btn-delete-update {/*hacer que los botones queden abajo*/
     margin-top: 20px;
     display: flex;
     gap: 10px;
@@ -229,7 +242,6 @@ footer p {
 }
 
 @media only screen and (max-width: 1242px) {
-
     /*//-- DIV.ACTIONS --//*/
     input {
         width: 55%;
@@ -240,32 +252,65 @@ footer p {
             width: 50%;
         }
     }
-
-    @media only screen and (max-width: 800px) {/*corregir margen entre pelis*/
-        .cards {
-            margin: 0 50px;/*VAS POR AQUI!!!!!!!!*/
-        }
-    }
-    @media only screen and (max-width: 781px) {
-        .btn {
-            font-size: 12px;
+    @media only screen and (max-width: 894px) {
+        header {
+            font-size: 20px;
         }
 
-        .cards {
-            width: auto;
-            flex-wrap: wrap;
+        .card-movie {
+            width: 330px;
+        }
+
+        .card-movie h3{
+            font-size: 25px;
+        }
+        @media only screen and (max-width: 868px){
+            .btn-post {
+                text-align: center;
+            }
+
+            @media only screen and (max-width: 800px) {/*corregir margen entre pelis*/
+                header {
+                    font-size: 18px;
+                }
+
+                h2 {
+                    font-size: 35px;
+                }
+
+                .btn {
+                    font-size: 15px;
+                }
+
+                .cards {
+                    margin: 0 50px;/*VAS POR AQUI!!!!!!!!*/
+                }
+
+            
+            }
+            @media only screen and (max-width: 781px) {
+                .btn {
+                    font-size: 12px;
+                }
+        
+                .cards {
+                    width: auto;
+                    flex-wrap: wrap;
+                }
+            }
+        
+            @media only screen and (max-width: 731px){/*ver si corregir ancho botones*/
+                input {
+                    width: 100%;
+                }
+                .btn {
+                    width: 100%;
+                    margin-top: 10px;
+                }
+            }
         }
     }
 
-    @media only screen and (max-width: 731px){/*ver si corregir ancho botones*/
-        input {
-            width: 100%;
-        }
-        .btn {
-            width: 100%;
-            margin-top: 10px;
-        }
-    }
 
 }
 

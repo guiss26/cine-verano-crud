@@ -1,7 +1,9 @@
-.card {
+.cards {
     margin: 80px 0;
-    /* height: 00px;
-    width: 600px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .card-movie-back{
@@ -9,11 +11,6 @@
     height: 500px;
     width: 600px;
 }
-
-/* .card-movie-back img{
-    width: 100%;
-    height: 250px;
-} */
 
 .card-form {
     width: 450px;
@@ -38,4 +35,8 @@ textarea {
 
 .btn-delete-update {
     justify-content: center;
+}
+
+.btn-update {
+    font-size: 17px;
 }
