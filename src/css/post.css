@@ -27,17 +27,33 @@ textarea {
     font-size: 13px;
 }
 
-/* .div-btn-post {
-    justify-content: center;
-    margin-top: 20px;
-    display: flex;
-    gap: 10px;
-} */
-
 .btn-delete-update {
     justify-content: center;
 }
 
 .btn-update {
     font-size: 17px;
+}
+
+@media only screen and (max-width: 504px) {
+    #formulario {
+        width: 420px;
+    }
+
+    @media only screen and (max-width: 460px) {
+        #formulario {
+            width: 380px;
+        }
+        @media only screen and (max-width: 415px) {
+            #formulario {
+                width: 300px;
+            }
+            @media only screen and (max-width: 345px){
+                #formulario {
+                    width: 280px;
+                }
+
+            }
+        }
+    }
 }

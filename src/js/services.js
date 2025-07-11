@@ -148,18 +148,19 @@ async function updateMovie(id) {
     }
 }
 
-formularioUpdate.addEventListener("submit", async function (e) {
-    e.preventDefault()//Evita que se recargue la página
-    const movieId = localStorage.getItem("movieId")
-    if(movieId){
-        updateMovie(movieId)
-    } 
-})
+if (formularioUpdate) {
+  formularioUpdate.addEventListener("submit", async function (e) {
+    e.preventDefault();
+    const movieId = localStorage.getItem("movieId");
+    if (movieId) {
+      updateMovie(movieId);
+    }
+  });
 
-//Al cargar la página
-const movieId = localStorage.getItem("movieId")
-if(movieId){
-    loadMovieData(movieId)
+  const movieId = localStorage.getItem("movieId");
+  if (movieId) {
+    loadMovieData(movieId);
+  }
 }
 //Al enviar el formulario
 
