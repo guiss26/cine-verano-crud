@@ -29,6 +29,7 @@ async function createMovie() {
             alert("Película guardada con éxito: " + data.title)
             formulario.reset() //limpiar formulario
             // redirigir al index
+            window.location.href = "../index.html"
         }
     } catch (error) {
         console.error("Error de red:", error)
@@ -84,17 +85,15 @@ async function printMovies() {
             </div>`
     }).join("")
     return printMovieList
-    // divCards.innerHTML = printMovieList
 }
-// window.addEventListener("DOMContentLoaded", printMovies);
 
+//UPDATE - PUT
 const formularioUpdate = document.getElementById("formulario-update")
 //recuperar el ID guardado desde localstorage
 function setMovieToEdit(id){
     localStorage.setItem("movieId", id)
 }
 
-//UPDATE - PUT
 //cargar valores al formulario
 async function loadMovieData(id){//no funciona
     try {
@@ -162,7 +161,6 @@ const movieId = localStorage.getItem("movieId")
 if(movieId){
     loadMovieData(movieId)
 }
-
 //Al enviar el formulario
 
 //DELETE - DELETE
@@ -177,7 +175,7 @@ async function deleteMovie(id) { //no se recarga enseguida al borrar
     if (response.ok) {
         const data = await response.json()
         alert("Película eliminada con éxito: " + data.title)
-        formulario.reset() //limpiar formulario -->Aquí da error
+        // formulario.reset() //limpiar formulario -->Aquí da error
         printMovies()
     } else {
         console.error("Error")

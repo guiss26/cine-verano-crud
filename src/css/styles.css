@@ -287,31 +287,65 @@ footer p {
                 }
 
             
-            }
-            @media only screen and (max-width: 781px) {
-                .btn {
-                    font-size: 12px;
+                @media only screen and (max-width: 781px) {
+                    .btn {
+                        font-size: 12px;
+                    }
+            
+                    .cards {
+                        width: auto;
+                        flex-wrap: wrap;
+                    }
+                    @media only screen and (max-width: 731px){/*ver si corregir ancho botones*/
+                        input {
+                            width: 100%;
+                        }
+                        .btn {
+                            width: 100%;
+                            margin-top: 10px;
+                        }
+
+                        @media only screen and (max-width: 633px){
+                            .actions {
+                                justify-content: center;
+                                align-items: center;
+                            }
+                            .buttons-get-post {
+                                display: block;
+                                width: 100%;
+                            }
+
+                            .btn {
+                                height: 50px;
+                            }
+
+                            @media only screen and (max-width: 391px) {
+                                header{
+                                    font-size: 16px;
+                                }
+                                h2 {
+                                    font-size: 28px;
+                                }
+
+                                @media only screen and (max-width: 361px) {
+                                    h2 {
+                                        font-size: 25px;
+                                    }
+
+                                    @media only screen and (max-width: 345px){
+                                        h2 {
+                                            font-size: 23px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
-        
-                .cards {
-                    width: auto;
-                    flex-wrap: wrap;
-                }
-            }
-        
-            @media only screen and (max-width: 731px){/*ver si corregir ancho botones*/
-                input {
-                    width: 100%;
-                }
-                .btn {
-                    width: 100%;
-                    margin-top: 10px;
-                }
+            
             }
         }
     }
 
 
 }
-
-/*VER CÓMO HACER EL ANCHO DE LOS ELEMENTOS DEL DIV.ACTIONS CON FR*/
